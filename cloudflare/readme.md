@@ -11,3 +11,15 @@ echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudf
 # install cloudflared
 sudo apt-get update && sudo apt-get install cloudflared
 ```
+
+- start the tunnel service in the background
+
+```
+sudo cloudflared service install {your-token}
+```
+
+- list current tunnels
+
+```
+sudo cloudflared tunnel list
+```
